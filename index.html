@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>JL Cars - Javascript Ninja Desafio 29 - João Leonardo</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <span data-js="company-name"></span> - 
+                <span data-js="company-phone"></span>
+            </h1>
+        </div>
+    </header>
+    <div class="register-div">
+        <div>
+            <h3>Cadastro de Automóvel</h3>
+            <form data-js="submit-form">
+                <input type="url" placeholder="Imagem do veículo" data-js="image"><br>
+                <input type="text" placeholder="Marca /  Modelo" data-js="brand"><br>
+                <input type="text" placeholder="Ano" data-js="year"><br>
+                <input type="text" placeholder="Placa" data-js="plate"><br>
+                <input type="text" placeholder="Cor" data-js="color"><br>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+        <h2>Lista de Veículos Cadastrados</h2>
+        <table>
+            <thead>
+                <th>Imagem do veículo</th>
+                <th>Marca / Modelo</th>
+                <th>Ano</th>
+                <th>Placa</th>
+                <th>Cor</th>
+            </thead>
+            <tbody data-js="table"></tbody>
+        </table>
+    </div>
+    <script src="DOM.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
